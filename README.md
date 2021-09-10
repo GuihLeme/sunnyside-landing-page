@@ -52,5 +52,5 @@ yarn start
 
 ## About Project
 
-Wanna know more about how I deal with this project? I wrote about it in my [dev.to](https://dev.to/guihleme/frontendmentor-io-challenge-1-o83).
+Wanna know more about how I deal with this project? I wrote about it in my [dev.to](https://dev.to/guihleme/frontendmentor-io-challenge-2-d3g).
 
