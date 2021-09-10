@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/react-js-styledcomponents-XU_6nPQII)
-- Live Site URL: [IP Address Tracker](https://sunnyside-landing-page-pi.vercel.app/)
+- Live Site URL: [Sunnyside landing page](https://sunnyside-landing-page-pi.vercel.app/)
 
 ## Running
 
