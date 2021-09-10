@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Desktop } from '../../styles/_breakpoints';
 
 export const Container = styled.header`
   display: flex;
@@ -91,6 +92,67 @@ export const Container = styled.header`
 
     /* margin: 6.25rem 0 3.75rem; */
 
+  }
+
+  @media ${Desktop()} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 3rem;
+
+    .header {
+      max-width: 1440px;
+      margin-bottom: 8.75rem;
+
+
+      input,
+      label {
+        display: none;
+        visibility: none;
+      }
+
+      nav {
+        visibility: visible;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+
+        a {
+          text-decoration: none;
+          color: var(--white);
+          margin-right: 3rem;
+        }
+
+        button {
+          background: var(--white);
+          border: none;
+          border-radius: 2rem;
+          padding: 1rem;
+
+          text-transform: uppercase;
+
+          font-family: 'Fraunces', serif;
+          font-weight: 900;
+
+          transition: all .2s;
+
+          &:hover {
+            background: #73cbff;
+            color: var(--white);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    h1 {
+      margin-bottom: 6.25rem;
+    }
   }
 
 `

@@ -2,10 +2,18 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const StandOut: React.FC = () => {
+interface StandOutProps {
+  width: number;
+}
+
+const StandOut: React.FC<StandOutProps> = ({ width }) => {
   return (
     <Container>
-      <div>
+      {width <= 700
+        ? <img src="/mobile/image-stand-out.jpg" alt="a glass cup" />
+        : <img src="/desktop/image-stand-out.jpg" alt="a glass cup" />
+      }
+      <div className='content'>
         <h1>Stand out to the right audience</h1>
 
         <p>
@@ -14,7 +22,6 @@ const StandOut: React.FC = () => {
 
         <a href="/">Learn more</a>
       </div>
-      <img src="" alt="" />
     </Container>
   );
 }

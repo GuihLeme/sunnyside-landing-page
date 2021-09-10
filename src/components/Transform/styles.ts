@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Desktop } from "../../styles/_breakpoints";
 
 export const Container = styled.section`
   display: flex;
@@ -42,6 +43,7 @@ export const Container = styled.section`
 
       position: relative;
 
+
       &::after {
         content: '';
 
@@ -54,7 +56,29 @@ export const Container = styled.section`
         top: 1.1rem;
         left: -0.5rem;
         z-index: -1;
+
+        transition: background .2s;
       }
+
+      &:hover {
+        &::after {
+          background: var(--yellow);
+        }
+      }
+    }
+  }
+
+  @media ${Desktop()} {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    img {
+      width: 50%;
+      height: 100%;
     }
   }
 `

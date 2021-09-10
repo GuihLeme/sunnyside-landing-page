@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     --red: hsl(7, 99%, 70%);
     --yellow:  hsl(51, 100%, 49%);
     --cyan-900: hsl(167, 40%, 24%); //text
-    --cyan-500: hsl(168, 34%, 41%); // footer
+    --cyan-500: #90d4c5; // footer
     --blue-500: hsl(198, 62%, 26%); //text photo
     --blue-900: hsl(212, 27%, 19%);
     --gray-900: hsl(213, 9%, 39%);

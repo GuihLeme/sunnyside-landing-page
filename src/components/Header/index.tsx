@@ -2,10 +2,17 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  width: number;
+}
+
+const Header: React.FC<HeaderProps> = ({ width }) => {
   return (
     <Container>
-      <img className='background' src={`/mobile/image-header.jpg`} alt="" />
+      {width <= 750
+        ? <img className='background' src="/mobile/image-header.jpg" alt="orange" />
+        : <img className='background' src="/desktop/image-header.jpg" alt="orange" />
+      }
       <div className='header'>
         <img src="/logo.svg" alt="logo" />
 
