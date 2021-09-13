@@ -8,6 +8,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   width: 100%;
 
+
   img {
     width: 50%;
   }
@@ -20,6 +21,8 @@ export const Container = styled.div`
     flex-wrap: nowrap;
 
     max-width: 1440px;
+    margin: 0 auto;
+
 
     img {
       width: 25%

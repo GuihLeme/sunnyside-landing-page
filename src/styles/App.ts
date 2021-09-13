@@ -13,5 +13,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
+    max-width: 1440px;
+    margin: 0 auto;
+
   }
 `

@@ -56,8 +56,5 @@ export const Container = styled.footer`
         }
       }
     }
-
   }
-
-
 `
