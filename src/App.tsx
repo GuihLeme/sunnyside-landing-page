@@ -13,7 +13,9 @@ import GlobalStyle from "./styles/global";
 import { Container } from './styles/App'
 
 function App() {
-  const [width, setWidth] = useState(0)
+  const [width, setWidth] = useState(
+    document.body.clientWidth
+  )
 
   window.onresize = () => {
     const w = document.body.clientWidth
